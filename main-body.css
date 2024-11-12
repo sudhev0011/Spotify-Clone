@@ -1,0 +1,157 @@
+.main-body{
+    background-color: #121212;
+    position: fixed;
+    top: 65px;
+    bottom: 75px;
+    left: 423px;
+    right: 8px;
+    border-radius: 8px;
+    padding: 0px 23px;
+    overflow: auto;
+    background-image: linear-gradient(to bottom,#1f1f1fa3 20%,#121212 80%);
+
+}
+.row-heading{
+    height: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.left{
+    color: white;
+    font-family: roboto;
+    font-size: 25px;
+    font-weight: 700;
+}
+.left:hover{
+    text-decoration: underline;
+}
+.right{
+    color: white;
+    font-family: roboto;
+    font-weight: 600;
+}
+.right:hover{
+    text-decoration: underline;
+}
+.artists-profile-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin: 10px 0px;
+}
+.artist-profile{
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+.artist-profile:hover{
+    background-color: #36363671;
+}
+.artist-profile img{
+    width: 167px;
+    height: 167px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.artist-name{
+    font-size: 16px;
+    color: white;
+    margin: 5px 0px;
+}
+.category{
+    color: rgb(146, 144, 144);
+    font-size: 14px;
+    margin: 5px 0 0 0;
+
+}
+.links p{
+    font-family: roboto;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.internal-links{
+    flex: 1;
+    display: flex;
+    column-gap: 60px;
+}
+.links ul a{
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.links ul a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.social-links button{
+    width: 40px;
+    height: 40px;
+    background-color: #292929;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: 15px;
+}
+.social-links button:hover{
+    background-color: #b3b3b398;
+}
+.social-links img{
+    width: 20px;
+    height: 20px;
+    margin: 4px 0px 0px 1px;
+}
+hr{
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.copyright p{
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 70px;
+}
+.artist-profile p:hover{
+    text-decoration: underline;
+}
+
+.icon{
+    width: 50px; 
+    height: 50px;
+    background-color: #1ed760;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 85px;
+    right: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+.artist-profile:hover .icon{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.artist-profile .icon:hover{
+    background-color: #3be477;
+    transform: scale(1.07);
+}
+
+.shadow{
+    background-image: linear-gradient(rgb(36, 36, 36),rgb(0,0,0));
+}

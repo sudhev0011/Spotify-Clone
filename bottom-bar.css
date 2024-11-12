@@ -1,0 +1,37 @@
+.bottom-bar{
+    position: fixed;
+    height: 66px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 24px;
+    cursor:pointer;
+}
+.bottom-para1{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+.bottom-para2{
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+}
+.right-bottom button{
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.01 ease-in-out;
+}
+.right-bottom button:hover{
+    transform: scale(1.03);
+}

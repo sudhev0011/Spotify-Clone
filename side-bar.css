@@ -1,0 +1,150 @@
+.side-bar {
+  position: fixed;
+  top: 65px;
+  bottom: 75px;
+  left: 8px;
+  width: 407px;
+  background-color: #121212;
+  border-radius: 8px;
+  overflow: auto;
+}
+.library {
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  padding: 25px 20px;
+  align-items: center;
+}
+.library-left-section {
+  display: flex;
+  align-items: center;
+}
+.library-left-section img {
+  height: 32px;
+}
+.library-left-section div {
+  margin-left: 10px;
+  font-family: arial;
+  font-weight: 600;
+  color: grey;
+  transition: color 0.5s;
+}
+.library-left-section div:hover {
+  color: white;
+  cursor: pointer;
+}
+.library-right-section div {
+  font-size: 28px;
+  font-weight: 600;
+  color: grey;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+.library-right-section div:hover {
+  color: white;
+  background-color: #1f1f1f;
+  cursor:pointer;
+}
+.side-bar-scroll-section {
+  padding: 0px 0px 0px 8px;
+  height: 210px;
+  overflow-y: auto;
+}
+.side-bar-scroll-section::-webkit-scrollbar,.main-body::-webkit-scrollbar{
+  background: transparent;
+  width: 10px;
+}
+
+.side-bar-scroll-section:hover::-webkit-scrollbar-thumb,.main-body:hover::-webkit-scrollbar-thumb{
+  background: rgb(84, 84, 84);
+}
+
+.scroll-section-inner-div {
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: sans-serif;
+}
+.para1{
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.para2{
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.scroll-section-inner-div button{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  transition: all 0.1s;
+}
+.scroll-section-inner-div button:hover{
+  font-size: 14px;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+  color: rgb(164, 161, 161);
+  font-family: roboto,  arial;
+  font-size: 11px;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+ul li{
+  margin-bottom: 15px;
+}
+ul li a{
+  margin-right: 15px;
+  cursor:pointer;
+}
+ul li span{
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+ul li span:hover{
+  text-decoration: underline;
+}
+.language-button{
+  margin-top: 35px;
+}
+.language-button button{
+  margin-left: 25px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  font-weight: 600;
+  transition: all 0.1s;
+}
+.language-button button:hover{
+  transform: scale(1.05);
+  border-color: white;
+  cursor: pointer;
+}
+
+.language-button button img{
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
